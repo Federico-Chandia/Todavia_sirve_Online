@@ -1,0 +1,20 @@
+.form-label , .form-control input-group-text{
+    display: flex;
+    justify-content: flex-start;
+}
+.input-group-text{
+    display: flex;
+    text-align: start;
+}
+.card{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.btn-dark{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #4087b3;
+    --bs-btn-border-color: #067bf0;
+    --bs-btn-hover-color: #fff;
+
+}

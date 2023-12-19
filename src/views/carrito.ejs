@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+
+<body class="home">
+    <%- include('partials/header') %>
+
+    <main class="main">
+        <section class="home__main__section">
+            <div>
+                <ul>
+                    <li>
+                        <h3>Tu Carrito(3)</h3>
+                    </li>
+                </ul>
+                <hr>
+                <div class="productos_container">
+                    <% products.forEach(producto => { %>
+                        <article class="producto_box">
+                            <div>
+                                <img src="/images/productos/<%= products.image %>" alt="<%= products.name %>">
+                            </div>
+                            <div class="info_product">
+                                <h4><%= products.name %></h4>
+                                <p>$ <%= products.price %></p>
+                                <button class="button_main">
+                                    <p>Eliminar</p>
+                                </button>
+                            </div>
+                        </article>
+                    <% }); %>
+                </div>
+                <div class="precio_total_box">
+                    <div class="price_total">
+                        <h3>TOTAL: $ 1000 </h3>
+                    </div>
+                </div>
+                <div class="buy_continue">
+                    <button class="button_main">
+                        <h3>Elegir más productos</h3>
+                    </button>
+                    <button class="button_main">
+                        <h3>Continuar Compra</h3>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>
